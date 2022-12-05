@@ -1,0 +1,160 @@
+:root {
+  --primary-color: #167cf8;
+  --secondary-color:var #13a7dd;  
+  --tertiary-color:var #e5c7a4;
+  --accent-color:var #d77f13;
+}
+
+html {
+  font-family: 'Roboto', sans-serif;
+}
+
+input {
+  padding: 4px;
+}
+
+p {
+  margin: 0.5rem;
+}
+
+.bg-dark, .bg-primary, .bg-secondary, .bg-tertiary, .bg-translucent-dark {
+  color: white;
+  padding: 1rem;
+}
+
+.bg-dark {
+  background-color: rgb(153, 49, 164);
+}
+
+.bg-primary {
+  background-color: var(--primary-color);
+ 
+}
+
+.bg-secondary {
+  background-color: var(--secondary-color);
+}
+
+.bg-tertiary {
+  background-color: var(--tertiary-color);
+}
+
+.bg-translucent-dark {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.button {
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+}
+
+.button-submit {
+  background-color: var(--accent-color);
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.gap {
+  gap: 1rem;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.rounded {
+  border-radius: 0.5rem;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-dark {
+  color: #333;
+}
+
+.text-italic {
+  font-style: italic;
+}
+
+.text-no-underline {
+  text-decoration: none;
+}
+
+.w-max-content {
+  width: max-content;
+}
+
+#contact, #hero {
+  background-size: cover;
+  background-position: center;
+}
+
+
+#contact {
+  background-image: url('./images/bg-2.jpg');
+  /* https://stackoverflow.com/a/24084708/1653236 */
+  box-shadow: inset 0 0 0 1000px rgba(0,0,0,.5);
+}
+
+
+#hero {
+  background-image: url('./images/bg.jpg');
+  height: 50vh;
+}
+
+
+
+
+
+@media (width >= 1024px) {
+  .flex-lg {
+    display: flex;
+  }
+  
+  .flex-row {
+    flex-direction: row;
+  }
+} 

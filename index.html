@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    
+    <link rel="stylesheet" href="./index.css" />
+    
+    <title>The Landing Page</title>
+  </head>
+  <body>
+    <header class="bg-primary">
+      <h1 class="text-center">The Landing Page</h1>
+    </header>
+
+    <main>
+       <div id="hero" class="flex flex-column items-center justify-center">
+        
+            <section class="bg-translucent-dark rounded">
+              <h2 class="text-center">Call to Action</h2>
+              <p>Sign up for our newsletter!</p>
+              <form class="flex flex-column gap items-center">
+                <label for="email" class="sr-only">Email</label>
+                <input type="email" id="email" placeholder="Enter your email" />
+                <button type="submit" class="button button-submit">Sign Up</button>
+              </form>
+            </section>
+         </div>
+
+          <section>
+        <h2>Our Mission</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptates, quod, quia, voluptate quae voluptatem quidem voluptas
+          doloremque quos quibusdam nesciunt. Quisquam, quae. Quisquam, quae.
+          Quisquam, quae. Quisquam, quae.
+        </p>
+        <a href="http://classics.mit.edu/" class="button bg-tertiary inline-block text-dark text-no-underline">Find out More</a>
+      </section>
+
+      <section class="bg-primary text-center">
+        <h2>Our Team</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptates, quod, quia, voluptate quae voluptatem quidem voluptas
+          doloremque quos quibusdam nesciunt. Quisquam, quae. Quisquam, quae.
+          Quisquam, quae. Quisquam, quae.
+        </p>
+        <a href="http://classics.mit.edu/" class="button bg-tertiary inline-block text-dark text-no-underline">Find out More</a>
+      </section>
+
+      <section>
+        <h2>Our Services</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
+          voluptates, quod, quia, voluptate quae voluptatem quidem voluptas
+          doloremque quos quibusdam nesciunt. Quisquam, quae. Quisquam, quae.
+          Quisquam, quae. Quisquam, quae.
+        </p>
+        <a href="http://classics.mit.edu/" class="button bg-tertiary inline-block text-dark text-no-underline">Find out More</a>
+      </section>
+      
+      <form class="bg-dark flex flex-column gap items-center" id="contact">
+        <h2>Contact Us</h2>
+        
+        <label for="name" class="sr-only">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" class="rounded w-max-content"/>
+        
+        <label for="email" class="sr-only">Email</label>
+        <input type="email" id="contact-email" placeholder="Enter your email" class="rounded w-max-content"/>
+       
+        <label for="phone" class="sr-only">Phone</label>
+        <input type="tel" id="phone" placeholder="Enter your phone number" class="rounded w-max-content"/>
+        
+        <label for="message" class="sr-only">Message</label>
+        <textarea id="message" placeholder="Enter your message" class="rounded w-max-content"></textarea>
+       
+        <label for="hear-select">How did you hear about us?</label>
+        <select name="options" id="hear-select">
+          <option value="">--Please choose an option--</option>
+          <option value="Search engine">Search engine</option>
+          <option value="Social media">Social media</option>
+          <option value="Blog">Blog</option>
+          <option value="Podcast">Podcast</option>
+          <option value="Television">Television</option>
+          <option value="Friend">Friend</option>
+        </select>
+ 
+        <button type="submit" class="button button-submit">Send</button>
+      </form>
+    </main>
+    
+    <footer class="bg-secondary">
+      <p>&copy; 2022 - The Landing Page</p>
+    </footer>
+  </body>
+</html>
